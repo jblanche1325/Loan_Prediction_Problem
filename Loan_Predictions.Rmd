@@ -1,6 +1,7 @@
 ---
 title: "Loan Predictions Markdown"
-output: rmarkdown::github_document
+output: html_document:
+  keep_md: true
 ---
 
 First, load the necessary libraries and read in the data.
