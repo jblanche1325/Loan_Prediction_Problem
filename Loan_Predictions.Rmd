@@ -66,11 +66,13 @@ dat <- bind_rows(train, test)
 colSums(is.na(dat))
 
 # Dependent Variable Balance
-train %>% 
+dep_var_plot <- train %>% 
   ggplot(aes(Loan_Status, fill = Loan_Status)) +
     geom_bar() +
     theme_bw() +
     ggtitle('Loan Status Balance')# ~2:1 approved
+
+print(dep_var_plot)
 
 ```
 
