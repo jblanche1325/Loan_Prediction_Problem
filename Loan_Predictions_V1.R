@@ -5,12 +5,10 @@
 library(tidyverse)
 library(ggmosaic)
 library(caret)
-library(caretEnsemble)
-library(keras)
 library(recipes)
 
 set.seed(865)
-setwd('C:/Users/ryabla1/Desktop/Kaggle/Loan Predictions III/')
+setwd('C:/Users/Ryan/Desktop/Data Science/Analytics Vidhya Competitions/Loan Prediction Problem III/')
 
 
 
@@ -19,11 +17,11 @@ setwd('C:/Users/ryabla1/Desktop/Kaggle/Loan Predictions III/')
 # -----------------------------------------------------------------------------------
 
 # Training Data
-train <- read_csv("C:/Users/ryabla1/Desktop/Kaggle/Loan Predictions III/train.csv",
+train <- read_csv("train.csv",
                   col_types = cols(Credit_History = col_character()))
 
 # Testing Data
-test <- read_csv("C:/Users/ryabla1/Desktop/Kaggle/Loan Predictions III/test.csv",
+test <- read_csv("test.csv",
                  col_types = cols(Credit_History = col_character()))
 
 # Look at Data
